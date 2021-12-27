@@ -1,10 +1,11 @@
-$(document).ready(function () {
   let wDate = new Date();
   wDate = wDate.toISOString();
   wDate = wDate.substring(0,19);
-  $("#txtDate").val(wDate);
-
-  $("btnSubmit").click(function() {
+  $("#txtDate").val(wDate); 
+  console.log("before");
+    
+  $("#btnSubmit").click(function() {
+    console.log("Click");
     wDate =   $("#txtDate").val();
 
     let wDate2 = wDate.substring(0,10); 
@@ -51,5 +52,4 @@ $(document).ready(function () {
     })
   
   })
-
-})
+  
